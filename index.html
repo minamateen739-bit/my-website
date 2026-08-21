@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Linking Font Awesome for icons -->
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Gulzar&family=Lavishly+Yours&family=Noto+Color+Emoji&family=Noto+Nastaliq+Urdu:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> 
+    <!--Linking Swiper CSS  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<link rel="stylesheet" href="style.css">
+<title>One Day| Coffee House☕</title>
+
+</head>
+<body>
+  
+<!-- Header / Navbar -->
+<header>
+    <nav class="navbar">
+        <a href="#" class="nav-logo">
+            <img src="logo.png" alt="Coffee House Logo" class="logo-image">
+        </a>
+        
+        <ul class="nav-menu">
+            <button id="menu-close-button" class="fas fa-times"></button>
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#menu" class="nav-link">Menu</a></li>
+            <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button id="menu-open-button" class="fas fa-bars"></button>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="section-content">
+            <div class="hero-details">
+                <span class="hero-badge">Freshly Brewed Every Day</span>
+                <h1 class="title">Best Coffee In Town</h1>
+                <h3 class="subtitle">Make your day great with our special coffee</h3>
+                <p class="description">Welcome to our coffee paradise where every bean tells a story and every cup sparks pure joy.</p>
+                <div class="buttons">
+                    <a href="https://wa.me/923XXXXXXXXX?text=Hello!%20I%20want%20to%20order%20coffee." target="_blank" class="btn btn-primary">
+   <i class="fab fa-whatsapp"></i> Order Now
+</a>
+    <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="hero-image-wrapper">
+                <img src="image1.png" alt="Hero Coffee Cup" class="hero-image">
+            </div>
+        </div>
+    </section>
+</main>
+        <!-- About Section -->
+<section class="about-section" id="about">
+    <div class="section-content">
+        <div class="about-image-wrapper">
+            <img src="image4.png" alt="couple enjoying coffee" class="about-image"> 
+        </div> <div class="about-details">
+            <h2 class="section-title">About Us</h2>
+            <p class="text">At our coffee House, we are proud about
+                 crafting the perfect cup of coffee. We source our beans from the finest coffee-growing regions around the world, ensuring that every sip is a delightful experience. Our skilled baristas are dedicated to creating unique blends and brewing methods that bring out the rich flavors and aromas of our coffee. Whether you're looking for a cozy spot to relax or a quick caffeine fix, we invite you to join us and discover the art of coffee at its best.</p>
+            <div class="social-link-list">
+                <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Menu Section -->
+<section class="menu-section" id="menu">
+    <h2 class="section-title">Our Menu</h2>
+    <p class="menu-subtitle">Taste the finest crafted coffee & delicious bites</p>
+
+    <!-- Menu Book Main Wrapper -->
+    <div class="menu-book">
+        
+        <!-- Category Tabs -->
+        <div class="menu-tabs">
+            <button class="tab-btn active" onclick="filterMenu('all')">All Items</button>
+            <button class="tab-btn" onclick="filterMenu('coffee')">Coffee</button>
+            <button class="tab-btn" onclick="filterMenu('dessert')">Desserts & Snacks</button>
+        </div>
+
+        <!-- Menu Columns Layout -->
+        <div class="menu-grid">
+            
+            <!-- Item 1 -->
+            <div class="menu-item dessert">
+                <img src="image7.png" class="menu-image" alt="Red Velvet Cheesecake">
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3 class="name">Red Velvet Cheesecake</h3>
+                        <span class="dots"></span>
+                        <span class="price">$6.50</span>
+                    </div>
+                    <p class="test">Rich layers of sweetness that make every bite delicious.</p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="menu-item coffee">
+                <img src="image8.png" class="menu-image" alt="Cappuccino">
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3 class="name">Cappuccino</h3>
+                        <span class="dots"></span>
+                        <span class="price">$4.50</span>
+                    </div>
+                    <p class="test">Classic rich espresso topped with smooth steamed milk froth.</p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="menu-item coffee">
+                <img src="image9.png" class="menu-image" alt="Cold Coffee">
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3 class="name">Cold Coffee</h3>
+                        <span class="dots"></span>
+                        <span class="price">$4.00</span>
+                    </div>
+                    <p class="test">Chilled coffee blend to keep you refreshed all day.</p>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="menu-item coffee">
+                <img src="image10.png" class="menu-image" alt="Black Coffee">
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3 class="name">Black Coffee</h3>
+                        <span class="dots"></span>
+                        <span class="price">$3.50</span>
+                    </div>
+                    <p class="test">Pure roasted dark coffee beans for a strong boost.</p>
+                </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="menu-item coffee">
+                <img src="image12.png" class="menu-image" alt="Vanilla Matcha">
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3 class="name">Vanilla Matcha</h3>
+                        <span class="dots"></span>
+                        <span class="price">$5.20</span>
+                    </div>
+                    <p class="test">Japanese green tea infused with sweet vanilla flavor.</p>
+                </div>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="menu-item coffee">
+                <img src="image15.png" class="menu-image" alt="Oreo Cold Coffee">
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3 class="name">Oreo Cold Coffee</h3>
+                        <span class="dots"></span>
+                        <span class="price">$5.00</span>
+                    </div>
+                    <p class="test">Rich creamy coffee blended with crunchy Oreo cookies.</p>
+                </div>
+            </div>
+
+            <!-- Item 7 -->
+            <div class="menu-item dessert">
+                <img src="13.png" class="menu-image" alt="Club Sandwich">
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3 class="name">Chicken Club Sandwich</h3>
+                        <span class="dots"></span>
+                        <span class="price">$7.00</span>
+                    </div>
+                    <p class="test">Layered toasted bread filled with chicken, veggies & sauce.</p>
+                </div>
+            </div>
+
+            <!-- Item 8 -->
+            <div class="menu-item dessert">
+                <img src="image14.png" class="menu-image" alt="Burger">
+                <div class="item-details">
+                    <div class="item-header">
+                        <h3 class="name">Beef Burger</h3>
+                        <span class="dots"></span>
+                        <span class="price">$8.00</span>
+                    </div>
+                    <p class="test">Juicy grilled patty served with fresh lettuce & signature sauce.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Testimomail Section -->
+
+<section class="testimonials" id="testimonials">
+    <div class="container">
+        <h2>What Our Coffee Lovers Say</h2>
+        <div class="testimonial-wrapper">
+            <div class="testimonial-card active">
+                <p class="feedback">"The aroma of their roasted beans is unmatched. My mornings are incomplete without their Signature Espresso!"</p>
+                <div class="user-info">
+                    <img src="man1 (4).png" alt="Sarah Khan">
+                    <div>
+                        <h4>Sarah Khan</h4>
+                        <span>Verified Customer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="feedback">"Best cozy environment and even better coffee. The latte art is always a beautiful surprise!"</p>
+                <div class="user-info">
+                    <img src="man1 (3).png" alt="Ahmed Raza">
+                    <div>
+                        <h4>Ahmed Raza</h4>
+                        <span>Coffee Enthusiast</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="feedback">"I love working from here! The cold brew is refreshing and the staff makes you feel right at home."</p>
+                <div class="user-info">
+                    <img src="Ayat2.png" alt="Zoya Sheikh">
+                    <div>
+                        <h4>Zoya Sheikh</h4>
+                        <span>Freelancer</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="feedback">"As a coffee purist, I'm very picky. But their pour-over technique is absolutely flawless. Highly recommended!"</p>
+                <div class="user-info">
+                    <img src="man1 (2).png" alt="Hamza Ali">
+                    <div>
+                        <h4>Hamza Ali</h4>
+                        <span>Coffee Connoisseur</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="feedback">"The Caramel Macchiato here is a dream. It's the perfect balance of sweetness and bold coffee flavor."</p>
+                <div class="user-info">
+                    <img src="download (8).png" alt="Ayesha Malik">
+                    <div>
+                        <h4>Ayesha Malik</h4>
+                        <span>Regular Visitor</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="feedback">"Their sugar-free options are actually delicious. Finally, a place that cares about healthy choices without losing taste!"</p>
+                <div class="user-info">
+                    <img src="ayat.png" alt="Sana Jameel">
+                    <div>
+                        <h4>Sana Jameel</h4>
+                        <span>Nutritionist</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="feedback">"Great spot for quick meetings. The Mocha is rich and chocolatey, just the way it should be."</p>
+                <div class="user-info">
+                    <img src="man1 (1).png" alt="Bilal Siddiqui">
+                    <div>
+                        <h4>Bilal Siddiqui</h4>
+                        <span>Business Consultant</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="controls">
+            <button id="prev">❮</button>
+            <button id="next">❯</button>
+        </div>
+    </div>
+</section>
+
+
+<!-- Gallery Section -->
+<section class="gallery-section" id="gallery">
+    <h2 class="section-title">Gallery</h2>
+    <p>Check out our cozy atmosphere and delicious coffee creations!</p>
+
+    <!-- Carousel Container -->
+    <div class="gallery-container">
+        <div class="gallery-track" id="galleryTrack">
+            <div class="gallery-card"><img src="image(12).png" alt="Gallery Image 1" class="gallery-image"></div>
+            <div class="gallery-card"><img src="image (2).png" alt="Gallery Image 2" class="gallery-image"></div>
+            <div class="gallery-card"><img src="image (7).png" alt="Gallery Image 3" class="gallery-image"></div>
+            <div class="gallery-card"><img src="image (8).png" alt="Gallery Image 4" class="gallery-image"></div>
+            <div class="gallery-card"><img src="image (9).png" alt="Gallery Image 5" class="gallery-image"></div>
+            <div class="gallery-card"><img src="image (10).png" alt="Gallery Image 6" class="gallery-image"></div>
+            <div class="gallery-card"><img src="image (11).png" alt="Gallery Image 7" class="gallery-image"></div>
+            <div class="gallery-card"><img src="image (13).png" alt="Gallery Image 8" class="gallery-image"></div>
+        </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="gallery-controls">
+        <button class="nav-btn" id="prevBtn">&lt;</button>
+        <button class="nav-btn" id="nextBtn">&gt;</button>
+    </div>
+</section>
+
+
+<!-- contact section -->
+<section class="contact-section" id="contact">
+    <h2 class="section-title">Contact Us</h2>   
+    <div class="contact-wrapper">
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+           <a href="mailto:minamateen739@gmail.com?subject=Coffee House Inquiry&body=Hi Mina," style="text-decoration: none;">
+    <button type="button" class="button">Send Message</button>
+</a>
+        </form>
+
+        <div class="contact-info">
+            <p><i class="fa-solid fa-location-dot"></i> 123 Coffee Street, City, Country</p>
+            <p><i class="fa-solid fa-phone"></i> +123 456 7890</p>
+            <p><i class="fa-solid fa-envelope"></i> info@coffeehouse.com</p>
+            <div class="social-links">
+    <a href="https://wa.me/yourphonenumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com/yourhandle" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-twitter"></i></a>
+</div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="social-btn">
+        <a href="https://www.whatsapp.com" class="social-link" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com" class="social-link" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com" class="social-link" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.twitter.com" class="social-link" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <br>
+    <p class="copyright">Thank you for visiting our Coffee House!</p>
+   <br><br><br>
+    <p class="copyright1">&copy; 2023 Coffee House. All rights reserved.</p>
+
+</footer>
+
+    </main>
+
+
+
+
+
+
+<!-- Linking custom script -->
+<script src="script.js"></script>
+
+</body>
+</html>
